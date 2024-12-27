@@ -1,0 +1,97 @@
+html {
+  background-color: tan;
+  font-family: "Besley", Georgia, serif;
+  box-sizing: content-box;
+}
+
+body {
+    width: 80vw;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 80vw;
+  box-shadow: 5px 5px #500505;
+}
+
+.gray {
+  filter: saturate(0);
+}
+
+section {
+  min-height: 50vh;
+  padding-top: 100px;
+}
+
+/* FONT STYLING */
+
+h1 {
+  font-weight: 600;
+}
+
+/* NAVIGATION STYLING */
+
+navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: brown;
+  margin: 0;
+  padding: 20;
+  z-index: 1;
+}
+
+.nav-list {
+  display: flex;
+}
+ul.nav-list {
+  list-style: none;
+}
+
+ul.nav-list li {
+  padding: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* LINK STYLING */
+
+a {
+  color: #000000;
+}
+
+li a {
+  text-decoration: none;
+  font-weight: 400;
+}
+
+li a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+li a:visited {
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+div,
+#project-card {
+  text-align: center;
+}
+
+
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 10px;
+  grid-template-rows: 1;
+  max-height: 200px;
+  width: 500px;
+}
